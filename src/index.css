@@ -1,7 +1,13 @@
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: 0.875rem;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -13,3 +19,32 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  margin-right: 0.5rem;
+  height: 0.25rem;
+  width: 0.25rem;
+}
+
+::-webkit-scrollbar-corner {
+  background-image: none;
+  border-style: none;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: move;
+  border-radius: 0.625rem;
+  --bg-opacity: 1;
+  background-color: rgb(50 50 56 / var(--bg-opacity));
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-style: none;
+  background-color: initial;
+}
