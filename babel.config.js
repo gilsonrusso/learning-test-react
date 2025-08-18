@@ -4,6 +4,6 @@ const config = {
     ['@babel/preset-react', { runtime: 'automatic' }],
     '@babel/preset-typescript',
   ],
-};
+}
 
-export default config;
+export default config
