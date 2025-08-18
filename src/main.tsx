@@ -1,14 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { RouterProvider } from 'react-router-dom'
-import { AppProvider } from './context'
+import { SharedProvider } from './context'
 import './index.css'
 import { router } from './router'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AppProvider>
+    <SharedProvider>
       <RouterProvider router={router} />
-    </AppProvider>
+    </SharedProvider>
   </StrictMode>,
 )

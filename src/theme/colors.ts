@@ -122,7 +122,7 @@ export const lightPalette = {
     // contrastText: '#fff',
   },
   secondary: {
-    main: '#E0C2FF',
+    main: Rocketseat['--colors-rocketseat-light'],
     // light: purple[300],
     // dark: purple[300],
     // contrastText: '#fff',

@@ -1,12 +1,8 @@
 type ButtonProps = {
-  onClick: () => void; 
-  label: string;
-};
+  onClick: () => void
+  label: string
+}
 
 export const Button = ({ onClick, label }: ButtonProps) => {
-  return (
-    <button onClick={onClick}>
-      {label}
-    </button>
-  );
+  return <button onClick={onClick}>{label}</button>
 }

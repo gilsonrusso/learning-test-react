@@ -14,7 +14,15 @@ let theme = createTheme({
   typography: {
     ...typography,
   },
-  
+  // components: {
+  //   MuiButton: {
+  //     styleOverrides: {
+  //       root: {
+  //         textTransform: 'uppercase',
+  //       },
+  //     },
+  //   },
+  // },
 })
 
 theme = responsiveFontSizes(theme)

@@ -1,21 +1,23 @@
-import { render, screen, waitFor } from '@testing-library/react';
-import { User } from '../../src/components/User';
-import { api } from '../../src/utils/api'; // Importamos o objeto 'api'
+import { render, screen, waitFor } from '@testing-library/react'
+import { User } from '../../src/components/User'
+import { api } from '../../src/utils/api' // Importamos o objeto 'api'
 
 describe('Componente User com jest.spyOn', () => {
   test('deve exibir o nome do usuário após o carregamento', async () => {
-    const fetchSpy = jest.spyOn(api, 'fetchUsername').mockResolvedValue('Maria da Silva');
+    const fetchSpy = jest
+      .spyOn(api, 'fetchUsername')
+      .mockResolvedValue('Maria da Silva')
 
-    render(<User />);
+    render(<User />)
 
-    expect(screen.getByText('Carregando...')).toBeInTheDocument();
+    expect(screen.getByText('Carregando...')).toBeInTheDocument()
 
     await waitFor(() => {
-      expect(screen.getByText('Usuário: Maria da Silva')).toBeInTheDocument();
-    });
-    
-    expect(fetchSpy).toHaveBeenCalledTimes(1);
+      expect(screen.getByText('Usuário: Maria da Silva')).toBeInTheDocument()
+    })
 
-    fetchSpy.mockRestore();
-  });
-});
+    expect(fetchSpy).toHaveBeenCalledTimes(1)
+
+    fetchSpy.mockRestore()
+  })
+})

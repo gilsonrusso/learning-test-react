@@ -1,11 +1,12 @@
 import theme from '@/theme/theme'
 import { ThemeProvider } from '@mui/material'
 import type React from 'react'
+import { AppProvider } from './AppContext'
 
-export const AppProvider = ({ children }: { children: React.ReactNode }) => {
+export const SharedProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <ThemeProvider theme={theme} noSsr>
-      {children}
+      <AppProvider>{children}</AppProvider>
     </ThemeProvider>
   )
 }

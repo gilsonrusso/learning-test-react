@@ -1,6 +1,6 @@
-import { styled } from '@mui/material';
-import Box, { type BoxProps } from '@mui/material/Box';
-import CircularProgress from '@mui/material/CircularProgress';
+import { styled } from '@mui/material'
+import Box, { type BoxProps } from '@mui/material/Box'
+import CircularProgress from '@mui/material/CircularProgress'
 
 const MuiBoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
@@ -14,14 +14,14 @@ const MuiBoxStyled = styled(Box)<BoxProps>(({ theme }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   zIndex: 9999,
-}));
+}))
 
 const Loading = () => {
   return (
     <MuiBoxStyled>
       <CircularProgress size={50} color="primary" />
     </MuiBoxStyled>
-  );
-};
+  )
+}
 
-export default Loading;
+export default Loading

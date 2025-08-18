@@ -1,5 +1,5 @@
-import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/Search'
+import SpaceDashboardOutlinedIcon from '@mui/icons-material/SpaceDashboardOutlined'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
@@ -7,6 +7,7 @@ import InputBase from '@mui/material/InputBase'
 import { alpha, styled } from '@mui/material/styles'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
+import BasicSwitches from './DarkMode'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -62,7 +63,7 @@ export default function SearchAppBar() {
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            <MenuIcon color="primary" />
+            <SpaceDashboardOutlinedIcon />
           </IconButton>
           <Typography
             variant="h6"
@@ -72,6 +73,7 @@ export default function SearchAppBar() {
           >
             MUI
           </Typography>
+          <BasicSwitches />
           <Search>
             <SearchIconWrapper>
               <SearchIcon />

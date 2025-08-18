@@ -1,8 +1,8 @@
-import react from '@vitejs/plugin-react';
-import path from 'path';
-import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react'
+import path from 'path'
+import { defineConfig } from 'vite'
 
-const SRC_DIR = path.resolve(__dirname, './src');
+const SRC_DIR = path.resolve(__dirname, './src')
 
 // https://vite.dev/config/
 export default defineConfig({
